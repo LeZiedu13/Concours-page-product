@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+
+* {
+   box-sizing: border-box;
+}
+
+/********** global *********/
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    margin:auto 0;
+    padding:0;
+    background-color: rgb(242, 216, 138);
+    font-size:larger;
+    font-family: 'Merienda', cursive;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/********** header ********/
+header {
+    display:flex; 
+    align-items: center;
+    background-color: #B66212;
+    background: linear-gradient(#B66212,rgb(206, 150, 96));
+    padding:50px;
+   
+}
+
+h1 {
+    text-align: center;
+}
+
+.momiji {
+    width:70px;
+    height:70px;
+    margin-right:15px;
+}
+
+.recherche {
+    margin-left: auto;
+}
+
+.search {
+    width:150px;
+    height:50px;
+    border-radius: 20px 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+#search::placeholder{
+    color:rgb(190, 19, 150);
+    font-size:15px;
+    font-style:italic;
+}
+
+/********** body ********/
+.navigation{
+    background:linear-gradient(rgba(57,5,45,0.7),#A1448B);
+    margin:0;
+}
+ nav ul {
+    display:flex;
+    justify-content: space-around;   
+    list-style-type:none;
+    padding:0;
+ }
+ nav ul li{
+    margin:20px;
+    background-color: #B66212;
+    padding:10px;
+    border: 1px solid;
+    border-radius: 9999px;
+    cursor: pointer;
+ }
+ nav ul li:hover{
+    background: rgb(182,98,18);
+    background: rgb(242, 216, 138);
+ }
+ nav ul li a{
+    text-decoration:none;
+    color:black;
+}
+.container{
+    flex: 1 0 auto;
+}
+
+/********** article *******/
+article{
+    padding:20px;
+    margin: 20px;
+    display: flex;
+}
+.cover{
+    margin:20px;
+    box-shadow: 10px 5px 5px black;
+}
+.stock{
+    display: block;
+    text-align:start;
+    width:15%;
+}
+
+.description{
+    text-align: center;
+    width:60%;
+    margin-left: auto;
+    border: 1px solid;
+    box-shadow: 5px 2px 2px black;
+    padding:10px;
+}
+.basket{
+    display:block;
+    font-family: 'Merienda', cursive;
+    font-size:20px;
+    color:black;
+    padding:15px 35px;
+    margin:20px;
+    margin-left:auto;
+    background:#B66212;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 8px #965a25;
+}
+.basket:active{
+    box-shadow:0 0 #965a25;
+    top:8px;
+}
+.same{
+    background-color: #A1448B;
+    text-align: center;
+    padding:15px;
+}
+.same:before {
+    content:"💮";
+    margin-right: 15px;
+}
+.same:after {
+    content:"💮";
+    margin-left: 15px;
+}
+.demo{
+    max-width: 500px;
+    margin:0 auto;
+    padding:30px 0;
+}
+.demo img{
+    width:200px;
+    height:300px;
+    margin:0 15px;
+    
+}
+
+/********** footer ********/
+footer{
+    flex-shrink: 0;
+    border-top: 1px solid #A1448B ;
+    width:100%;
+}
+.footer_container{
+    width:1200px;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 15px;
+    padding: 50px 0 50px;
+}
+.block{
+    width:25%;
+    margin:0 30px;
+}
+.footer_infos{
+    list-style-type: none;
+    padding:0;
+}
+.footer_infos a{
+    text-decoration: none;
+    color:black; 
+}
+.footer_infos i{
+    padding-right: 10px;
+}
+
+/********** responsive ********/
+
+/********** responsive footer ******/
+
+/******tablette*******/
+ 
+@media screen and (max-width: 1300px){
+    .footer_container{
+        width: 700px;
+        flex-wrap:wrap;
+    }
+    .block{
+        width: 40%;
+        margin:0 0;
+    }
+    .block:nth-child(1),
+    .block:nth-child(2){
+        margin-bottom:50px;
+    }
+}
+
+
+/*------mobile------*/
+@media screen and (max-width: 900px){
+   
+    .footer_container{
+        width:320px;
+        text-align: center;
+    }
+    .block{
+        width:300px;
+        margin:30px 30px;      
+    }
+    .block:nth-child(1){
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
+}
+
+
+
+/********** responsive header ******/
+
+@media screen and (max-width: 1300px){
+    
+    nav ul{
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between; 
+        width:100%;
+        text-align:center;
+        font-size: 10px;
+        margin: 0 100px;
+        padding:20px;
+    }
+    nav ul li{
+        margin: 0 auto;
+        width:30%;
+        margin-top: 10px;
+        margin-bottom:10px;
+     }
+
+    
+    .loupe{
+        display:none;
+    }
+    
+    }
+
+    @media screen and (max-width: 500px){
+
+        header{
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        }
+        .recherche{
+            margin:0 auto;
+        }
+    }
+
+    /****** responsive article ******/
+
+    @media screen and (max-width: 1100px){
+    
+        article{
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            text-align:center;
+        }
+           
+        article{
+            width:100%;
+            padding:0;
+            margin:0;
+        } 
+        .description, .basket{
+            margin:0 auto;
+        }
+        .stock{
+            padding:20px;
+            margin:0 auto;
+            width:30%;
+            text-align: center;
+        }
+        .basket{
+            margin-top:10px;
+        }
+            
+         .slick-next{
+            right:0;
+         }   
+        }

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css"> 
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Page de produit</title>
+</head>
+<body>
+    <header>     
+        <img src="images/logo_librairie.png" alt="logo de la librairie" class="momiji">
+        <h1>MOMIJIGARI <br> librairie japonaise</h1>      
+        <div class="recherche">
+            <label for="search" class="loupe"> 🔎 </label>
+            <input type="text" name="search" id="search" placeholder="votre recherche..." class="search" />
+        </div>     
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Guide de conversation</a></li>
+            <li><a href="#">Beaux-livres</a></li>
+            <li><a href="#">Livres en V.o</a></li>
+            <li><a href="#">Créer un compte</a></li>
+            <li><a href="#">Se connecter </a></li>
+            <li><a href="#">Panier</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <article>
+            <a href="#"><img src="images/yokai.jpg" alt="couverture du livre sur les Yokai"class="cover"></a>
+            <div class="stock">
+                <p> ✔️ En stock</p>
+                <label for="quantité"> quantité:</label>
+                <input type="number" id="quantité" name="quantité" min="1" max="10">
+            </div>
+            <div class="description">
+            <h2>Yokai, la parade nocturne des 100 démons</h2>
+            <p>Matthew Meyer</p>
+            <p>Nuinui</p>
+            <p>24.90€</p>
+            <p>Beaux-livres</p>
+            <p>9782889357659</p>
+            <p>266 pages</p>
+            <p>Monstres, démons, fantômes, lutins, animaux mutants, etc. Le folklore japonais regorge d'étranges
+                créatures qui renvoient à un univers ancestral où les forces de la nature, tantôt bienfaisantes, 
+                tantôt mauvaises et menaçantes, se sont muées dans l'imaginaire populaire en des êtres magiques 
+                qui interagissent sans cesse avec le monde des hommes.Au XVIIIe siècle ces mystérieuses créatures 
+                (yôkai, en japonais) ont été rassemblées, cataloguées et illustrées pour la première fois dans une 
+                formidable encyclopédie du surnaturel</p>
+            </div>
+        </article>
+        <button class="basket" type="button"> Ajouter au panier</button>
+
+        <h2 class="same">Dans le même rayon: </h2>
+        
+            <div class="demo">
+                <div><a href="#"><img src="images/couvertures_articles/hakutaku.jpg" alt="dessins de monstres japonais"></a></div>
+                <div><a href="#"><img src="images/couvertures_articles/japon_gourmand.jpg" alt="dessin de nourriture japonaise" ></a></div>
+                <div><a href="#"><img src="images/couvertures_articles/le_japon_grands_voyageurs.jpg" alt="jeune fille tirant à l'arc" ></a></div>
+                <div><a href="#"><img src="images/couvertures_articles/goshu_le_violoncelliste.jpg" alt="dessin de crabes sur une plage" ></a></div>
+                <div><a href="#"><img src="images/couvertures_articles/kanji.jpg" alt="illustrations en kanji" ></a></div>
+                <div><a href="#"><img src="images/couvertures_articles/Mononoke-Au-temps-des-esprits-malfaisants.jpg" alt="dessins d'esprits japonais" ></a></div>
+            </div>  
+    </div>
+
+<footer>
+    <div class="footer_container">
+        <div class="block footer_info">
+            <strong>Nos informations</strong>
+            <ul class="footer_infos">
+                <li><a href="#">CGV</a></li>
+                <li><a href="#" target="_blank">Où nous trouver</a></li>
+            </ul>
+        </div>
+        <div class="block footer_contact">
+            <strong>Nous contacter</strong>
+                    <p>📞 04-42-27-44-68</p>
+                    <p>📨 momijilib@orange.fr</p>
+                    <p>🏠 23 rue des érables <br> 13100 Aix-en-Provence</p>
+        </div>
+        
+        <div class="block footer_social">
+            <strong>Nos réseaux sociaux</strong>
+            <ul class="footer_infos">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i>Twitter</a></li>
+            </ul>
+        </div>
+        <div class="block footer_planning">
+            <strong>Horaires de la librairie</strong>
+            <ul class="footer_infos">
+                <li>❌ Lundi fermé</li>
+                <li>👍 Mardi 9h30/19h00</li>
+                <li>👍 Mercredi 9h30/19h00</li>
+                <li>👍 Jeudi 9h30/19h00</li>
+                <li>👍 Vendredi 9h30/19h00</li>
+                <li>👍 Samedi 9h00/19h30</li>
+                <li>❌ Dimanche fermé</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
